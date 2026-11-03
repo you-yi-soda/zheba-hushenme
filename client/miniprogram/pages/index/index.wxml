@@ -1,0 +1,59 @@
+<view class="page" wx:if="{{ready}}">
+  <view class="header">
+    <view class="brand"><view class="logo">發</view><view><view class="brand-title">麻将大师</view><view class="brand-en">MAHJONG MASTER</view></view></view>
+    <button class="ui rule-button" bindtap="showRules">川麻 · 血战　⌄</button>
+  </view>
+  <view class="mode">
+    <button class="ui mode-button {{mode === 'waits' ? 'selected' : ''}}" data-mode="waits" bindtap="changeMode"><view>胡什么</view><text>当前{{13 - melds.length * 3}}张</text></button>
+    <button class="ui mode-button {{mode === 'discards' ? 'selected' : ''}}" data-mode="discards" bindtap="changeMode"><view>打哪张能听</view><text>当前{{14 - melds.length * 3}}张</text></button>
+  </view>
+  <view class="scanner">
+    <view class="viewfinder">
+      <image wx:if="{{photo}}" class="photo" src="{{photo}}" mode="aspectFit"/>
+      <view wx:else class="sample-tiles"><view wx:for="{{sampleTiles}}" wx:key="id" class="tile sample-tile"><image class="tile-art" src="{{item.image}}" mode="aspectFit"/></view></view>
+      <view class="corner top-left"></view><view class="corner top-right"></view>
+    </view>
+    <button class="ui primary camera-button" bindtap="choosePhoto" loading="{{busy}}" disabled="{{busy}}" data-source="camera"><text class="camera-icon">◎</text><text>{{busy ? '正在识牌…' : mode === 'waits' ? '打开相机查听口' : '打开相机看出牌'}}</text><text class="arrow">→</text></button>
+  </view>
+  <view class="secondary-actions">
+    <button class="ui secondary-button" bindtap="choosePhoto" data-source="album" disabled="{{busy}}"><text>▧</text>从相册选照片</button>
+    <button class="ui secondary-button" bindtap="openPicker"><text>▦</text>手动选牌</button>
+  </view>
+  <view class="section-title"><view class="section-name">我的手牌<text class="count">{{tiles.length}}张</text></view><view wx:if="{{tiles.length || canUndo || photo}}" class="actions"><button class="ui" bindtap="undo" disabled="{{!canUndo}}">撤销</button><button class="ui" bindtap="newRound">新一局</button></view></view>
+  <button wx:if="{{!tiles.length}}" class="ui empty-add" bindtap="openPicker"><view class="empty-plus">＋</view><view>添加手牌</view></button>
+  <view wx:else class="hand">
+    <view wx:for="{{tiles}}" wx:key="index" class="hand-tile">
+      <button class="ui tile tile-button {{item.uncertain ? 'uncertain' : ''}}" data-index="{{item.index}}" bindtap="tapHandTile" aria-label="{{deleteMode ? '删除' : '修改'}}第{{index+1}}张{{item.name}}"><image class="tile-art" src="{{item.image}}" mode="aspectFit"/></button>
+      <button wx:if="{{deleteMode}}" class="ui tile-remove" data-index="{{item.index}}" catchtap="removeHandTile" aria-label="删除第{{index+1}}张{{item.name}}">×</button>
+    </view>
+    <button class="ui hand-add" bindtap="openPicker" aria-label="添加手牌"><view>＋</view><text>添加</text></button>
+  </view>
+  <view class="hand-meta">
+    <button wx:if="{{tiles.length}}" class="ui delete-hand {{deleteMode ? 'active' : ''}}" bindtap="toggleDeleteMode" aria-label="{{deleteMode ? '完成删除并收起标记' : '显示删除标记'}}">{{deleteMode ? '完成删除' : '删除手牌'}}</button><view wx:else></view>
+    <picker range="{{queOptions}}" value="{{queIndex}}" bindchange="changeQue"><view class="que-picker">定缺：{{queOptions[queIndex]}} ⌄</view></picker>
+  </view>
+  <view class="meld-tools"><text>{{melds.length ? '已记录 ' + melds.length + ' 组碰杠' : '尚未记录碰杠'}}</text><view class="meld-actions"><button class="ui" data-meld="pong" bindtap="openPicker">＋ 碰</button><button class="ui" data-meld="kong" bindtap="openPicker">＋ 杠</button></view></view>
+  <view class="meld-entry" wx:for="{{melds}}" wx:key="index"><view class="tile mini"><image class="tile-art" src="{{item.image}}" mode="aspectFit"/></view><text>{{item.typeLabel}} {{item.name}}</text><button class="ui" data-index="{{index}}" bindtap="removeMeld">删除</button></view>
+  <view wx:if="{{pending}}" class="review"><view>核对完整张数和每张牌。黄色框需要特别留意。</view><button class="ui primary" bindtap="confirm" disabled="{{busy}}">确认这 {{tiles.length}} 张完整且正确</button></view>
+  <view wx:if="{{!isEmpty}}" class="result {{error ? 'result-error' : ''}}">
+      <view class="answer">{{title}}</view><view wx:if="{{error || !waits.length}}" class="result-note">{{error || note}}</view>
+      <view wx:if="{{waits.length}}" class="waits"><button wx:for="{{waits}}" wx:key="id" class="ui wait-item" data-index="{{index}}" bindtap="toggleWait"><view class="tile large"><image class="tile-art" src="{{item.image}}" mode="aspectFit"/></view><view class="wait-label">{{item.name}} · 未见 {{item.unseen}}</view></button></view>
+      <button wx:if="{{waits.length}}" class="ui proof-toggle" bindtap="toggleProof">查看拆牌依据<text>{{proofOpen ? '⌃' : '›'}}</text></button>
+      <view wx:if="{{proofOpen}}" class="wait-proofs">
+        <view wx:for="{{waits}}" wx:key="id" class="proof"><view class="proof-heading">{{item.name}} · {{item.type}}</view>{{item.proof}}<view wx:if="{{melds.length}}">另加已记录的碰杠。</view></view>
+      </view>
+      <view wx:if="{{winProof}}" class="proof">{{winProof}}<view wx:if="{{melds.length}}">另加已记录的碰杠。</view></view>
+      <view wx:for="{{discards}}" wx:key="id" class="discard"><button class="ui discard-button" data-index="{{index}}" bindtap="toggleDiscard"><view class="discard-heading"><text>打</text><view class="tile mini"><image class="tile-art" src="{{item.image}}" mode="aspectFit"/></view><text class="discard-name">{{item.name}}</text><text class="discard-count">{{item.waits.length}} 种 · 未见 {{item.unseen}}</text></view><view class="discard-waits">听 {{item.waitText}}　⌄</view></button><view wx:if="{{expandedDiscard === index}}" class="proof"><view wx:for="{{item.waits}}" wx:for-item="waiting" wx:key="id" class="proof-line">{{waiting.name}} · 未见 {{waiting.unseen}} · {{waiting.type}}<view>{{waiting.proof}}</view></view></view></view>
+      <view wx:if="{{!pending && (proofOpen || !waits.length)}}" class="footnote">未见张数不等于牌墙库存；不判断过胡、番数与放炮风险。{{queIndex === 0 ? '未设置定缺，仅展示牌型结果。' : ''}}</view>
+  </view>
+  <view class="footer"><button class="ui help-button" bindtap="showRules">ⓘ 使用说明</button></view>
+</view>
+<view wx:if="{{picker}}" class="overlay" bindtap="closePicker"><view class="sheet" catchtap="noop"><view class="sheet-head"><view><view class="sheet-title">{{pickerTitle}}</view><view class="sheet-hint">{{canDelete ? '点选新牌替换，也可以删除此牌' : '点选牌面，即时更新结果'}}</view></view><button class="ui close-button" bindtap="closePicker" aria-label="关闭选牌">×</button></view>
+  <view wx:if="{{tiles.length}}" class="picker-selection">
+    <view class="picker-selection-title">已选手牌<text>{{tiles.length}}张</text></view>
+    <view class="picker-selected-hand">
+      <view wx:for="{{tiles}}" wx:key="index" class="tile picker-selected-tile {{item.uncertain ? 'uncertain' : ''}}" aria-label="第{{index+1}}张{{item.name}}"><image class="tile-art" src="{{item.image}}" mode="aspectFit"/></view>
+    </view>
+  </view>
+  <view wx:for="{{palette}}" wx:key="suit" class="palette-suit"><view class="palette-label">{{item.suit}}子</view><view class="palette-row"><button wx:for="{{item.tiles}}" wx:for-item="choice" wx:key="id" class="ui tile palette-tile" disabled="{{choice.disabled}}" data-id="{{choice.id}}" bindtap="chooseTile" aria-label="选择{{choice.name}}"><image class="tile-art" src="{{choice.image}}" mode="aspectFit"/><text wx:if="{{choice.used}}" class="used">{{choice.used}}</text></button></view></view><button wx:if="{{canDelete}}" class="ui delete" bindtap="deleteTile">删除这张牌</button><view class="picker-bottom"><text>已选 {{tiles.length}} 张手牌</text><view class="picker-actions"><button class="ui picker-undo" bindtap="undoPicker" disabled="{{!canPickerUndo}}">撤回</button><button class="ui primary done-button" bindtap="closePicker">完成</button></view></view></view></view>
+<view wx:if="{{rulesOpen}}" class="overlay" bindtap="closeRules"><view class="sheet" catchtap="noop"><view class="sheet-head"><view class="sheet-title">本局规则</view><button class="ui close-button" bindtap="closeRules">×</button></view><view class="rule-line"><text>定缺花色</text><picker range="{{queOptions}}" value="{{queIndex}}" bindchange="changeQue"><view class="que-picker">{{queOptions[queIndex]}} ⌄</view></picker></view><view class="rule-line"><text>允许七对</text><switch color="#426b49" checked="{{sevenPairs}}" bindchange="changeSeven"/></view><view class="rule-description">普通胡、七对（四张算两对），支持记录碰和杠。未设置定缺时，只做牌型分析。暂不判断过胡、番数及放炮风险。</view><button class="ui source-offer" bindtap="showSource">开源与许可</button><button class="ui primary" bindtap="closeRules">设置好了</button></view></view>

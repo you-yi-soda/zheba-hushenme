@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict');
+const config=require('../miniprogram/config');
+const offer=require('../miniprogram/services/source-offer');
+let modal,copied;
+global.wx={showModal(o){modal=o},setClipboardData(o){copied=o.data}};
+const original=config.sourceCodeUrl;
+config.sourceCodeUrl='';offer.show();assert.equal(modal.showCancel,false);assert.equal(copied,undefined);
+for(const url of ['http://example.org/source','javascript:alert(1)','https://user:pass@example.org/x','https://example.org/a b'])assert.equal(offer.validUrl(url),false);
+config.sourceCodeUrl='https://example.org/source.zip';offer.show();
+assert.equal(modal.confirmText,'复制地址');modal.success({confirm:false});assert.equal(copied,undefined);
+modal.success({confirm:true});assert.equal(copied,config.sourceCodeUrl);
+config.sourceCodeUrl=original;
+console.log('PASS: source offer handles missing URL, rejects unsafe addresses and copies only after confirmation');

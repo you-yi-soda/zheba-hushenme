@@ -1,0 +1,1 @@
+page{background:#f6f5ef;color:#203f32;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}button{font-size:28rpx;color:inherit;margin:0;border:0}button::after{border:0}button[disabled]{opacity:.35}

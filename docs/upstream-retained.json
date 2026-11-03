@@ -1,0 +1,182 @@
+{
+  "commit": "28ffceed232ad95fd019c47a6c51ae7c78791a0e",
+  "files": [
+    {
+      "path": "LICENSE",
+      "upstream_sha256": "0902daf1b9bf23e87c1d2cdfe6b5a76c8a717477f25af6a8af34bd2d087fab29",
+      "retained_sha256": "0902daf1b9bf23e87c1d2cdfe6b5a76c8a717477f25af6a8af34bd2d087fab29",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "upstream_sha256": "4f2307c971090cd3bbaff6d102ae8fb6594015fd1f78fbbecdab005fde8dd839",
+      "retained_sha256": "4f2307c971090cd3bbaff6d102ae8fb6594015fd1f78fbbecdab005fde8dd839",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/README.md"
+    },
+    {
+      "path": "check_classes.py",
+      "upstream_sha256": "5ccaa2ba01b7c15d9ff1e321969cd574abd709f908fc2c8036284e5ad79bd90a",
+      "retained_sha256": "5ccaa2ba01b7c15d9ff1e321969cd574abd709f908fc2c8036284e5ad79bd90a",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/check_classes.py"
+    },
+    {
+      "path": "create_labeled_demo.py",
+      "upstream_sha256": "3f4c77ecf6df8113b63e642f492a09d806c94de710b2a87c512ac1872279a078",
+      "retained_sha256": "3f4c77ecf6df8113b63e642f492a09d806c94de710b2a87c512ac1872279a078",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/create_labeled_demo.py"
+    },
+    {
+      "path": "generate_inference_examples.py",
+      "upstream_sha256": "1cd9033873b9acbabc9eb3f069391bee1b30165b096dafab557b3cb54feb6bd6",
+      "retained_sha256": "1cd9033873b9acbabc9eb3f069391bee1b30165b096dafab557b3cb54feb6bd6",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/generate_inference_examples.py"
+    },
+    {
+      "path": "inference_validation.py",
+      "upstream_sha256": "797683ffe2a1d4320a950ec9dbc190ab3495eeb0f9ee556a82569d186cb0d8e9",
+      "retained_sha256": "797683ffe2a1d4320a950ec9dbc190ab3495eeb0f9ee556a82569d186cb0d8e9",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/inference_validation.py"
+    },
+    {
+      "path": "notebooks/data.yaml",
+      "upstream_sha256": "397e23f65ec21f072a5ef4783b8b440ba07ac868b667d925cc33fc0dd5d9ffc3",
+      "retained_sha256": "397e23f65ec21f072a5ef4783b8b440ba07ac868b667d925cc33fc0dd5d9ffc3",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/data.yaml"
+    },
+    {
+      "path": "notebooks/data/processed/data.yaml",
+      "upstream_sha256": "ec5a4e3248d3b85edfbd45e132ddcf68b9e8da98e6be5aba3a54c6f87a9470f9",
+      "retained_sha256": "ec5a4e3248d3b85edfbd45e132ddcf68b9e8da98e6be5aba3a54c6f87a9470f9",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/data/processed/data.yaml"
+    },
+    {
+      "path": "notebooks/data_labeling/COCO_Split_dataset.ipynb",
+      "upstream_sha256": "13b697e618f6581f8b9da5655151851840531fe2743f2456119524aa2f448195",
+      "retained_sha256": "13b697e618f6581f8b9da5655151851840531fe2743f2456119524aa2f448195",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/data_labeling/COCO_Split_dataset.ipynb"
+    },
+    {
+      "path": "notebooks/data_labeling/COCO_augmentation.ipynb",
+      "upstream_sha256": "c930b710b193b3a23a35779721751405bbee1a177064358fb09e467c6acc3b25",
+      "retained_sha256": "cb569a026ebe13e4440ce5a1519e23b1900665db0037112584077c86ad3b7866",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/data_labeling/COCO_augmentation.ipynb"
+    },
+    {
+      "path": "notebooks/data_labeling/COCO_to_YOLO.ipynb",
+      "upstream_sha256": "404baf5dfb743b035ba9d0c7ebdbf02a3a21669313c8fb0f2794a68f69d42c6e",
+      "retained_sha256": "8b69698ae29b8d6527fe444e1394bf8aa98d92494ccff5ccfef6ef043a5141ea",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/data_labeling/COCO_to_YOLO.ipynb"
+    },
+    {
+      "path": "notebooks/data_labeling/YOLO_augmentation.ipynb",
+      "upstream_sha256": "7dbbb528233f6942667bfb97a951ff5d9ef253b562edc9e13e4a021fa12178f1",
+      "retained_sha256": "21cb5442d2847137977c410cf5f465c9987b70712b67c89c87d7be1c235c7f1e",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/data_labeling/YOLO_augmentation.ipynb"
+    },
+    {
+      "path": "notebooks/data_labeling/YOLO_manual_adjust.ipynb",
+      "upstream_sha256": "57d9c60141c3586bf282b0dba58d9753ae6c4ccd16ec88589b3da01f6c2437cf",
+      "retained_sha256": "bcfeb07bbaa3e2b01a24d2414292638631831a3b0f12b5014d4b574dfd6d6cc2",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/data_labeling/YOLO_manual_adjust.ipynb"
+    },
+    {
+      "path": "notebooks/data_processing/convert_to_grayscale.ipynb",
+      "upstream_sha256": "af493407e3ef1cf9c74af12eb915777ccefa74ce87b89853755b02b2d0fd5bcf",
+      "retained_sha256": "ef7f2f7967a15dfb2e9b05a2b1211af173eb5ca787d507a8d11dd9c39fd5771d",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/data_processing/convert_to_grayscale.ipynb"
+    },
+    {
+      "path": "notebooks/data_processing/data_cleaning.ipynb",
+      "upstream_sha256": "a375230df889ff8af9840f4e655b726ecc5ac68b986bfc4307818f04c8bc11c5",
+      "retained_sha256": "91f9a2406ac003059ab1f86f6f1e3bf94179ca15fcdebea479963e76d9b53952",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/data_processing/data_cleaning.ipynb"
+    },
+    {
+      "path": "notebooks/data_processing/tiles_recognition.ipynb",
+      "upstream_sha256": "d190e261b6145f9f2bb82925df47a76e3be902dd80851dbbfc01c4dd12a87694",
+      "retained_sha256": "88155f7a10b7d4b92c544f22b0cd6244da2de7fa0923b200976bbdd495f3af17",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/data_processing/tiles_recognition.ipynb"
+    },
+    {
+      "path": "notebooks/yolo.ipynb",
+      "upstream_sha256": "1a1cac71b503eb08bc815e2447bccb34b48fc5e70436f61b38a42f2be7978831",
+      "retained_sha256": "ac7f31dce438766a849addbeb0cc260213c0bf5f31de76a80a744af363304402",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/yolo.ipynb"
+    },
+    {
+      "path": "notebooks/yolo_predict.ipynb",
+      "upstream_sha256": "2c433234a301f05ec2038d6cf2cc12c30c0571dee6d1ef99eee4a2bfad678578",
+      "retained_sha256": "90777b95a984c029c855c1bbea209cf0f73679a5ddd78b6a870fc0b08a77ec22",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/yolo_predict.ipynb"
+    },
+    {
+      "path": "notebooks/yolo_with_yolo_data.ipynb",
+      "upstream_sha256": "c8371ad4a7d0a9a27ea7e40bd4439d8b40a4d97ac6b00b8ac166e1e334a61c31",
+      "retained_sha256": "6848bcf3dddee871f76a1c4c6c85fcd3aa0d46b62116d2cc2115e6080e02308c",
+      "changes": [
+        "removed notebook outputs and execution counters; code unchanged"
+      ],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/notebooks/yolo_with_yolo_data.ipynb"
+    },
+    {
+      "path": "scripts/convert_yolo_to_coreml.py",
+      "upstream_sha256": "d34a4b7a55a751d818c33c52f31336db095fdb254c9594ea622ae8de8b568dab",
+      "retained_sha256": "d34a4b7a55a751d818c33c52f31336db095fdb254c9594ea622ae8de8b568dab",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/scripts/convert_yolo_to_coreml.py"
+    },
+    {
+      "path": "scripts/convert_yolo_to_onnx.py",
+      "upstream_sha256": "08c56d779d5268d73dbfd2880c6153d32abc251e2e414db0936f637b2e50669c",
+      "retained_sha256": "08c56d779d5268d73dbfd2880c6153d32abc251e2e414db0936f637b2e50669c",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/scripts/convert_yolo_to_onnx.py"
+    },
+    {
+      "path": "validate_models.py",
+      "upstream_sha256": "9c27c1f88fad64c1863b0a2a70e380bfe00b9780b5de56e142de32fe3356b9da",
+      "retained_sha256": "9c27c1f88fad64c1863b0a2a70e380bfe00b9780b5de56e142de32fe3356b9da",
+      "changes": [],
+      "url": "https://raw.githubusercontent.com/nikmomo/Mahjong-YOLO/28ffceed232ad95fd019c47a6c51ae7c78791a0e/validate_models.py"
+    }
+  ],
+  "errors": []
+}

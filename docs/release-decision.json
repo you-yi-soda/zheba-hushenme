@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "date": "2026-11-03",
+  "ownerApprovedPublicRelease": true,
+  "scope": [
+    "WeChat mini-program source",
+    "mahjong rules engine",
+    "tile assets",
+    "recognition server",
+    "PT and ONNX model files",
+    "upstream source and notices",
+    "build and export scripts",
+    "configuration templates and tests"
+  ],
+  "excluded": [
+    "personal hand photos",
+    "credentials",
+    "private operator configuration"
+  ],
+  "publicationConfirmed": false,
+  "publicSourceUrl": "https://github.com/you-yi-soda/zheba-hushenme",
+  "recordedAtStage": "before_initial_public_upload"
+}

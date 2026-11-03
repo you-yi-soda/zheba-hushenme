@@ -1,0 +1,182 @@
+{
+  "repository": "nikmomo/Mahjong-YOLO",
+  "commit": "28ffceed232ad95fd019c47a6c51ae7c78791a0e",
+  "files": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f515b1bb9070d6e8f14d02295ff2ae8a1f787e1e",
+      "size": 1067,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/f515b1bb9070d6e8f14d02295ff2ae8a1f787e1e"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6358ad6a483a2e0862b6b903b846de9761bb8c29",
+      "size": 11449,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/6358ad6a483a2e0862b6b903b846de9761bb8c29"
+    },
+    {
+      "path": "check_classes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52689d5608eb961c19cfe503be0bcfe686db7fb5",
+      "size": 4941,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/52689d5608eb961c19cfe503be0bcfe686db7fb5"
+    },
+    {
+      "path": "create_labeled_demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3289f6fc7ded74472cb2f4d64856b598fb351127",
+      "size": 9915,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/3289f6fc7ded74472cb2f4d64856b598fb351127"
+    },
+    {
+      "path": "generate_inference_examples.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8cfe95cfd3857d4d67ceb6a490dc3133d6ada31",
+      "size": 10681,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/a8cfe95cfd3857d4d67ceb6a490dc3133d6ada31"
+    },
+    {
+      "path": "inference_validation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7240302a9a08190c0ca4625af74635dd74534648",
+      "size": 13663,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/7240302a9a08190c0ca4625af74635dd74534648"
+    },
+    {
+      "path": "notebooks/data.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cfc0dec20b3bac16ef41263570f9acc193b83e6",
+      "size": 496,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/6cfc0dec20b3bac16ef41263570f9acc193b83e6"
+    },
+    {
+      "path": "notebooks/data/processed/data.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5d7f2d82e2abb10bddb2ede518eec6ce3bf5fe5",
+      "size": 160,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/e5d7f2d82e2abb10bddb2ede518eec6ce3bf5fe5"
+    },
+    {
+      "path": "notebooks/data_labeling/COCO_Split_dataset.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42a378bd17ba283c72853d8a02d70a17d21549de",
+      "size": 3787,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/42a378bd17ba283c72853d8a02d70a17d21549de"
+    },
+    {
+      "path": "notebooks/data_labeling/COCO_augmentation.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c28050d5e2c869fd11c0c5b3fb512da736f8d4d5",
+      "size": 8248,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/c28050d5e2c869fd11c0c5b3fb512da736f8d4d5"
+    },
+    {
+      "path": "notebooks/data_labeling/COCO_to_YOLO.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "532dd045ce314a23ff0ffcb7c64fe87f5cf2ef15",
+      "size": 4117,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/532dd045ce314a23ff0ffcb7c64fe87f5cf2ef15"
+    },
+    {
+      "path": "notebooks/data_labeling/YOLO_augmentation.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2e75d4293b267aea95c4e841b8316e93229d5d5",
+      "size": 10328954,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/f2e75d4293b267aea95c4e841b8316e93229d5d5"
+    },
+    {
+      "path": "notebooks/data_labeling/YOLO_manual_adjust.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5e10e53c44585c02d84aa0e0caf99a8fa6332b7",
+      "size": 11462,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/d5e10e53c44585c02d84aa0e0caf99a8fa6332b7"
+    },
+    {
+      "path": "notebooks/data_processing/convert_to_grayscale.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0dca20a9fdb2524e98d72da7c009dcd85c83f245",
+      "size": 2427,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/0dca20a9fdb2524e98d72da7c009dcd85c83f245"
+    },
+    {
+      "path": "notebooks/data_processing/data_cleaning.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4f6977cde9b126f4445606889eab46ca92f749d",
+      "size": 28960,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/f4f6977cde9b126f4445606889eab46ca92f749d"
+    },
+    {
+      "path": "notebooks/data_processing/tiles_recognition.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9aeec9f5bf56ca158f209b0f8d05bc4c151bba4",
+      "size": 699591,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/b9aeec9f5bf56ca158f209b0f8d05bc4c151bba4"
+    },
+    {
+      "path": "notebooks/yolo.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10ee572a99c3ac42be1c9735b0313f44d73b9f13",
+      "size": 5000,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/10ee572a99c3ac42be1c9735b0313f44d73b9f13"
+    },
+    {
+      "path": "notebooks/yolo_predict.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8e85f0ab8bd4cd14f684c82272eea05a898f442",
+      "size": 84557,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/c8e85f0ab8bd4cd14f684c82272eea05a898f442"
+    },
+    {
+      "path": "notebooks/yolo_with_yolo_data.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f51ab531faa699784a227f37a8420c74eff33fb3",
+      "size": 165694,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/f51ab531faa699784a227f37a8420c74eff33fb3"
+    },
+    {
+      "path": "scripts/convert_yolo_to_coreml.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c796dd40c66035e035a36aaf6be484a513786c6",
+      "size": 5587,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/5c796dd40c66035e035a36aaf6be484a513786c6"
+    },
+    {
+      "path": "scripts/convert_yolo_to_onnx.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae27f3d93637e80457bec732fa4e1038d99fdb92",
+      "size": 5394,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/ae27f3d93637e80457bec732fa4e1038d99fdb92"
+    },
+    {
+      "path": "validate_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53d28b47ae4e29b75191751884d57aabcaec6491",
+      "size": 2891,
+      "url": "https://api.github.com/repos/nikmomo/Mahjong-YOLO/git/blobs/53d28b47ae4e29b75191751884d57aabcaec6491"
+    }
+  ]
+}

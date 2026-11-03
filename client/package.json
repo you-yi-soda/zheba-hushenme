@@ -1,0 +1,9 @@
+{
+  "name": "mahjong-master-miniprogram",
+  "private": true,
+  "scripts": {
+    "test": "node tests/engine.test.mjs && node tests/page.test.cjs && node tests/cloud.test.cjs && node tests/source-offer.test.cjs"
+  },
+  "version": "1.0.0",
+  "license": "AGPL-3.0"
+}
