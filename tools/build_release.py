@@ -27,7 +27,7 @@ def main():
     config=stage/'client/miniprogram/config.js'
     config.write_text(config.read_text().replace("sourceCodeUrl: ''",'sourceCodeUrl: '+json.dumps(args.source_url)))
     records=[{'path':str(p.relative_to(stage)),'size':p.stat().st_size,'sha256':digest(p)} for p in sorted(stage.rglob('*')) if p.is_file()]
-    (stage/'MANIFEST.json').write_text(json.dumps({'schema':1,'date':'2026-11-03','license':'AGPL-3.0',
+    (stage/'MANIFEST.json').write_text(json.dumps({'schema':1,'date':'2026-11-10','license':'AGPL-3.0',
           'publicSourceUrl':args.source_url,'ownerApprovedPublicRelease':json.loads((ROOT/'docs/release-decision.json').read_text()).get('ownerApprovedPublicRelease',False) if (ROOT/'docs/release-decision.json').exists() else False,'publicationStatus':'not_checked_by_local_builder','files':records},ensure_ascii=False,indent=2)+'\n')
     def archive(folder,output):
         with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:

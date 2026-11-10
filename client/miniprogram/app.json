@@ -1,6 +1,13 @@
 {
-  "pages": ["pages/index/index"],
-  "window": {"navigationBarTitleText": "麻将大师", "navigationBarBackgroundColor": "#f6f5ef", "navigationBarTextStyle": "black", "backgroundColor": "#f6f5ef"},
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "这把胡什么",
+    "navigationBarBackgroundColor": "#f6f5ef",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f5ef"
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

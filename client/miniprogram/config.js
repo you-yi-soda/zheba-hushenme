@@ -1,10 +1,10 @@
-// 部署后填微信云托管环境 ID 和服务名。这里不放任何密钥。
-// 留空时手动功能正常，照片入口明确提示未接通。
+// 公开模板：按自己的部署填写；这里不放密钥。
 module.exports = {
-  sourceCodeUrl: "https://github.com/you-yi-soda/zheba-hushenme", // 公开源码地址；确认公开并验证可访问后再填写
+  sourceCodeUrl: 'https://github.com/you-yi-soda/zheba-hushenme',
   recognitionProvider: 'cloud',
   cloudEnv: '',
   cloudService: 'mahjong-recognition',
-  recognitionUrl: '', // 仅 recognitionProvider='https' 时使用
-  recognitionTimeoutMs: 60000
+  recognitionUrl: '',
+  recognitionTimeoutMs: 15000,
+  recognitionRetryDelayMs: 2000
 };

@@ -96,3 +96,56 @@
 .picker-selected-tile.uncertain{border:3rpx solid #d79d33}
 
 .sheet .source-offer{width:100%;min-height:80rpx;margin:0 0 18rpx;padding:18rpx;border:1rpx solid #d6dfc4;border-radius:20rpx;color:#426b49;font-size:24rpx}
+
+/* v1.1: confirmed visual design and transactional hand review. */
+.page{box-sizing:border-box;min-height:100vh;display:flex;flex-direction:column}
+.logo{width:90rpx;height:90rpx;border-radius:20rpx;font-family:inherit;box-shadow:none;font-size:62rpx;margin-right:22rpx}
+.brand-title{font-size:42rpx;letter-spacing:0}
+.brand-en{font-size:19rpx;letter-spacing:1rpx}
+.page .rule-button{font-size:22rpx;padding:14rpx 18rpx}
+.scan-status{display:flex;align-items:center;justify-content:space-between;font-size:23rpx;color:#687c5a;padding:16rpx 4rpx 0;line-height:1.6}
+.page .scan-status .ui{font-size:23rpx;padding:6rpx 16rpx;color:#7f6b45}
+.hand-meta{padding:4rpx 0 8rpx;overflow:visible}
+.page .delete-hand{min-height:62rpx;padding:12rpx 20rpx;border:2rpx solid #bf7e68;box-sizing:border-box;line-height:1.4;overflow:visible;box-shadow:inset 0 0 0 1rpx #bf7e6810}
+.footer{display:flex;align-items:center;justify-content:center;margin-top:auto;padding-top:44rpx}
+.page .help-button{padding:14rpx 22rpx;white-space:nowrap}
+.footer-divider{font-size:25rpx;color:#d4ddc5;margin:0 8rpx}
+.sheet.picker-sheet{height:88vh;padding:0;overflow:hidden;display:flex;flex-direction:column}
+.picker-sheet .sheet-head{padding:30rpx 32rpx 20rpx;margin:0;flex-shrink:0}
+.picker-sheet .sheet-title{font-size:36rpx}
+.picker-sheet .sheet-hint{font-size:21rpx;line-height:1.5;margin-top:8rpx}
+.picker-scroll{flex:1;min-height:0;height:calc(88vh - 350rpx)}
+.picker-content{padding:0 30rpx 12rpx}
+.review-notice,.picker-instruction{margin:2rpx 0 25rpx;padding:19rpx 22rpx;background:#edf1e3;border-radius:16rpx;font-size:21rpx;color:#687c5a;line-height:1.7}
+.review-notice{background:#f5ebcb;color:#856328}
+.review-notice view{font-weight:600}.review-notice text{font-size:20rpx}
+.picker-selection{padding:22rpx;background:#edf1e2;border-radius:20rpx}
+.picker-selection-title{justify-content:space-between;font-size:25rpx;line-height:1.5}
+.picker-selection-title>view{display:flex;align-items:center;white-space:nowrap}
+.picker-selection-title .picker-delete-hint{margin-left:8rpx;font-size:20rpx;color:#697e5f}
+.picker-selected-hand{gap:18rpx 10rpx;padding-bottom:8rpx}
+.sheet .picker-selected-tile{display:flex;align-items:center;justify-content:center;width:100%;min-width:0;max-width:none;height:106rpx;min-height:106rpx;padding:5rpx;border:1rpx solid #c2cbb6;border-radius:9rpx;background:linear-gradient(145deg,#fffef7,#eeeddf);box-shadow:0 6rpx 0 #c1c8af;overflow:hidden;line-height:1}
+.sheet .picker-selected-tile.replacing{border:3rpx solid #3b6f51}
+.sheet .picker-selected-tile.uncertain{border:3rpx solid #d79d33}
+.picker-empty{font-size:22rpx;color:#839277;padding:26rpx 0;line-height:1.8}
+.picker-content .palette-suit{margin-bottom:27rpx}
+.picker-content .palette-label{font-size:21rpx;margin-bottom:13rpx}
+.used{top:auto;bottom:3rpx;right:1rpx;width:23rpx;height:23rpx;padding:0;border-radius:50%;background:#24513b;color:#fff;font-size:16rpx;display:flex;align-items:center;justify-content:center;line-height:1}
+.picker-footer{border-top:1rpx solid #dce3d0;padding:20rpx 30rpx calc(22rpx + env(safe-area-inset-bottom));flex-shrink:0;background:#f6f5ef}
+.picker-count{display:flex;align-items:center;justify-content:space-between;font-size:23rpx;color:#23472d;margin-bottom:20rpx;gap:12rpx}
+.picker-status{font-size:20rpx;color:#7f8d70;text-align:right;flex:1;min-width:0}
+.picker-status.needs-edit{color:#a27638}
+.picker-actions{display:flex;width:100%}
+.sheet .picker-undo{width:175rpx;min-height:86rpx;padding:18rpx;border:1rpx solid #d6dfc4;background:#edf0e5;margin-right:20rpx;border-radius:20rpx;font-size:26rpx}
+.sheet .done-button{width:auto;flex:1;min-height:86rpx;padding:18rpx;font-size:28rpx}
+.sheet .done-button[disabled]{background:#e5e9d9;border-color:#e5e9d9;color:#9ca78e;opacity:1}
+.picker-draft-note{text-align:center;font-size:20rpx;color:#8b9582;margin-top:18rpx}
+.picker-meld-preview{display:flex;align-items:center;gap:22rpx;padding:15rpx 0 25rpx;font-size:27rpx}
+.game-mode-sheet{padding-bottom:calc(65rpx + env(safe-area-inset-bottom))}
+.sheet .game-mode-choice{display:flex;align-items:center;width:100%;padding:28rpx;background:#edf2e2;border:2rpx solid #c4d5b4;border-radius:24rpx;text-align:left}
+.game-mode-icon{width:100rpx;height:100rpx;display:flex;align-items:center;justify-content:center;background:#173f33;color:#f7f6ef;border-radius:22rpx;font-size:56rpx;margin-right:26rpx}
+.game-mode-label{font-size:32rpx;font-weight:600}
+.game-mode-label text{display:block;font-size:22rpx;color:#7c8978;font-weight:400;margin-top:10rpx}
+.game-mode-check{margin-left:auto;background:#173f33;border-radius:50%;width:42rpx;height:42rpx;text-align:center;line-height:42rpx;color:#f7f6ef;font-size:29rpx}
+.help-section{margin:25rpx 0;font-size:24rpx;line-height:1.9;color:#77866b}.help-section view{color:#244a35;font-size:27rpx;font-weight:600;margin-bottom:8rpx}
+@media(max-width:350px){.brand-title{font-size:37rpx}.brand-en{font-size:18rpx;letter-spacing:0}.page .rule-button{font-size:21rpx}.picker-selection-title .picker-delete-hint{font-size:19rpx}.picker-count{font-size:22rpx}.picker-status{font-size:19rpx}}

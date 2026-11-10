@@ -1,6 +1,6 @@
 {
-  "description": "麻将大师微信小程序",
-  "projectname": "mahjong-master-open-source",
+  "description": "这把胡什么 v1.1 微信小程序",
+  "projectname": "zheba-hushenme-open-source",
   "compileType": "miniprogram",
   "miniprogramRoot": "miniprogram/",
   "appid": "touristappid",
